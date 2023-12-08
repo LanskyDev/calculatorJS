@@ -79,18 +79,15 @@ header {
     display: flex;
     justify-content: space-between;
     color: white;
+    font-size: 1.4rem;
 }
 
-.theme-button-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1.5rem;
+header p {
+    align-self: start;
 }
 
-.theme-button-container p {
-    text-align: center;
-}
+
+
 
 .display-container {
     display: flex;
