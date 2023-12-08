@@ -10,6 +10,7 @@
 
   <title>Frontend Mentor | Calculator app</title>
 
+  <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="styles.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script defer src="index.js"></script>
@@ -17,21 +18,20 @@
 
 <body>
 
-  <article id="calculator">
+  <article id="calculator" class="calculator">
     <header>
-      <h2>Calc</h2>
-      <div class="theme-container" id="themeContainer">
+      <h2>calc</h2>
+      <div class="theme-button-container" id="themeButtonContainer">
         <p>theme</p>
         <button>THEME</button>
       </div>
     </header>
     <div class="display-container" id="displayContainer">
-      <div class="display-text" id="displayText">
+      <p class="display-text" id="displayText">
         :)
-      </div>
+      </p>
     </div>
-    <div class="control-buttons">
-
+    <div class="control-buttons keypad-container">
       <div class="row">
         <button type="button" class="btn-num" data-value="7">7</button>
         <button type="button" class="btn-num" data-value="8">8</button>
