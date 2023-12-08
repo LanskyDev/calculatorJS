@@ -54,7 +54,6 @@ $(pointButton).on("click", () => {
     // Add a point to num1 or num2 based on the state of the app (if there's an operator or not);
     if (!operator && !num1.includes(".")) {
         num1 += point;
-        display();
     } else if (operator && !num2.includes(".")) {
         num2 += point;
     }

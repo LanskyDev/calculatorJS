@@ -10,8 +10,16 @@
 
   <title>Frontend Mentor | Calculator app</title>
 
+<!-- FONT -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+
+<!-- CSS -->
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="styles.css">
+
+<!-- JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script defer src="index.js"></script>
 </head>
@@ -33,36 +41,36 @@
     </div>
     <div class="control-buttons keypad-container">
       <div class="row">
-        <button type="button" class="btn-num" data-value="7">7</button>
-        <button type="button" class="btn-num" data-value="8">8</button>
-        <button type="button" class="btn-num" data-value="9">9</button>
-        <button type="button" class="btn-del" id="btnDel">DEL</button>
+        <button type="button" class="btn-num btn-square" data-value="7">7</button>
+        <button type="button" class="btn-num btn-square" data-value="8">8</button>
+        <button type="button" class="btn-num btn-square" data-value="9">9</button>
+        <button type="button" class="btn-del btn-square" id="btnDel">DEL</button>
       </div>
 
       <div class="row">
-        <button type="button" class="btn-num" data-value="4">4</button>
-        <button type="button" class="btn-num" data-value="5">5</button>
-        <button type="button" class="btn-num" data-value="6">6</button>
-        <button type="button" class="btn-plus btn-operator" data-value="+">+</button>
+        <button type="button" class="btn-num btn-square" data-value="4">4</button>
+        <button type="button" class="btn-num btn-square" data-value="5">5</button>
+        <button type="button" class="btn-num btn-square" data-value="6">6</button>
+        <button type="button" class="btn-plus btn-operator btn-square" data-value="+">+</button>
       </div>
 
       <div class="row">
-        <button type="button" class="btn-num" data-value="1">1</button>
-        <button type="button" class="btn-num" data-value="2">2</button>
-        <button type="button" class="btn-num" data-value="3">3</button>
-        <button type="button" class="btn-minus btn-operator" data-value="-">-</button>
+        <button type="button" class="btn-num btn-square" data-value="1">1</button>
+        <button type="button" class="btn-num btn-square" data-value="2">2</button>
+        <button type="button" class="btn-num btn-square" data-value="3">3</button>
+        <button type="button" class="btn-minus btn-operator btn-square" data-value="-">-</button>
       </div>
 
       <div class="row">
-        <button type="button" class="btn-point" id="btnPoint" data-value=".">.</button>
-        <button type="button" class="btn-num" data-value="0">0</button>
-        <button type="button" class="btn-division btn-operator" data-value="/">/</button>
-        <button type="button" class="btn-multiplication btn-operator" data-value="*">X</button>
+        <button type="button" class="btn-point btn-square" id="btnPoint" data-value=".">.</button>
+        <button type="button" class="btn-num btn-square" data-value="0">0</button>
+        <button type="button" class="btn-division btn-operator btn-square" data-value="/">/</button>
+        <button type="button" class="btn-multiplication btn-operator btn-square" data-value="*">x</button>
       </div>
 
       <div class="row">
-        <button type="button" class="btn-reset" id="btnReset">Reset</button>
-        <button type="button" class="btn-equal" id="btnEqual">=</button>
+        <button type="button" class="btn-reset btn-rectangle" id="btnReset">RESET</button>
+        <button type="button" class="btn-equal btn-rectangle" id="btnEqual">=</button>
       </div>
 
 
