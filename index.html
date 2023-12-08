@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Calculator app</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script defer src="index.js"></script>
+</head>
+
+<body>
+
+  <article id="calculator">
+    <header>
+      <h2>Calc</h2>
+      <div class="theme-container" id="themeContainer">
+        <p>theme</p>
+        <button>THEME</button>
+      </div>
+    </header>
+    <div class="display-container" id="displayContainer">
+      <div class="display-text" id="displayText">
+        :)
+      </div>
+    </div>
+    <div class="control-buttons">
+
+      <div class="row">
+        <button type="button" class="btn-num" data-value="7">7</button>
+        <button type="button" class="btn-num" data-value="8">8</button>
+        <button type="button" class="btn-num" data-value="9">9</button>
+        <button type="button" class="btn-del" id="btnDel">DEL</button>
+      </div>
+
+      <div class="row">
+        <button type="button" class="btn-num" data-value="4">4</button>
+        <button type="button" class="btn-num" data-value="5">5</button>
+        <button type="button" class="btn-num" data-value="6">6</button>
+        <button type="button" class="btn-plus btn-operator" data-value="+">+</button>
+      </div>
+
+      <div class="row">
+        <button type="button" class="btn-num" data-value="1">1</button>
+        <button type="button" class="btn-num" data-value="2">2</button>
+        <button type="button" class="btn-num" data-value="3">3</button>
+        <button type="button" class="btn-minus btn-operator" data-value="-">-</button>
+      </div>
+
+      <div class="row">
+        <button type="button" class="btn-point" id="btnPoint" data-value=".">.</button>
+        <button type="button" class="btn-num" data-value="0">0</button>
+        <button type="button" class="btn-division btn-operator" data-value="/">/</button>
+        <button type="button" class="btn-multiplication btn-operator" data-value="*">X</button>
+      </div>
+
+      <div class="row">
+        <button type="button" class="btn-reset" id="btnReset">Reset</button>
+        <button type="button" class="btn-equal" id="btnEqual">=</button>
+      </div>
+
+
+    </div>
+  </article>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Luiz Lansky</a>.
+  </div>
+</body>
+
+</html>
