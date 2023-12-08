@@ -69,9 +69,9 @@ body {
     display: flex;
     flex-flow: column;
     padding: 1.6rem;
-    min-height: 100vh;
     background-color: var(--clr-theme1-main-bg);
     color: var(--clr-text-white);
+    height: 100vh;
 }
 
 
@@ -85,8 +85,6 @@ header {
 header p {
     align-self: start;
 }
-
-
 
 
 .display-container {
@@ -157,4 +155,14 @@ header p {
     background-color: var(--clr-equal-button-bg);
     color: var(--clr-text-white);
     box-shadow: 0 3px 0 hsl(6, 68%, 35%);
+}
+
+
+.attribution {
+    margin: 20px 0 0 0;
+    font-size: .7rem;
+}
+
+.attribution a {
+    color: var(--clr-equal-button-bg)
 }
