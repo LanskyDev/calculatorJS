@@ -36,6 +36,7 @@ button {
 
 body {
     font-family: var(--ff-primary);
+    background-color: var(--clr-theme1-main-bg);
 }
 
 .calculator {
@@ -44,8 +45,23 @@ body {
     padding: 1.6rem;
     background-color: var(--clr-theme1-main-bg);
     color: var(--clr-text-white);
-    height: 100vh;
+
+
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    min-width: 375px;
+    max-width: 900px;
 }
+
+@media (min-width: 600px) {
+    .calculator {
+      min-width: 550px;
+    }
+  }
 
 
 header {
@@ -124,7 +140,7 @@ header p {
     box-shadow: 0 3px 0 var(--clr-del-reset-shadow);
 }
 
-.btn-equal{
+.btn-equal {
     background-color: var(--clr-equal-button-bg);
     color: var(--clr-text-white);
     box-shadow: 0 3px 0 hsl(6, 68%, 35%);
