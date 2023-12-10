@@ -88,7 +88,8 @@ $(delButton).on("click", () => {
             ? num1 = num1.substring(0, num1.length - 1) // Remove the last digit
             : num2 = num2.substring(0, num2.length - 1);
     } else {
-        return;
+        // If the equal button has been pressed, remove one digit from the result
+        result = Number(result.toString().slice(0, -1));
     }
 
     display();
@@ -120,9 +121,15 @@ function handleNumberButtonClick(number) {
 
 function handleOperatorButtonClick(selectedOperator) {
 
-    equalButtonPressed = false;
-    operator = selectedOperator;
 
+    // If num2 is truthy, don't change the operator; else, change it
+    if (num2) {
+        return;
+    } else {
+        equalButtonPressed = false;
+        operator = selectedOperator;
+    }
+    
     display();
 }
 
@@ -158,12 +165,12 @@ function calculate() {
     operator = "";
 }
 
+
 function formatNumber(number) {
-    if(Number.isInteger(number)){
+    if (Number.isInteger(number)) {
         return number;
     } else {
         const roundedNumber = parseFloat(number.toFixed(8));
-
         return roundedNumber;
     }
 }
