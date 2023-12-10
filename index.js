@@ -9,7 +9,7 @@ const resetButton = $("#btnReset").first();
 let num1 = "";
 let num2 = "";
 let operator = "";
-let result = "";
+let result = 0;
 let equalButtonPressed = false;
 
 
@@ -110,7 +110,7 @@ function handleNumberButtonClick(number) {
     if (!operator) {
         num1 += number;
     } else if (operator) {
-        num2 += number;  
+        num2 += number;
     }
 
     equalButtonPressed = false;
@@ -128,8 +128,24 @@ function handleOperatorButtonClick(selectedOperator) {
 
 
 function calculate() {
-    let calcString = num1 + operator + num2;
-    result = eval(calcString);
+
+    numberToCalc1 = Number(num1);
+    numberToCalc2 = Number(num2);
+
+    switch (operator) {
+        case "+":
+            result = numberToCalc1 + numberToCalc2;
+            break;
+        case "-":
+            result = numberToCalc1 - numberToCalc2;
+            break;
+        case "*":
+            result = numberToCalc1 * numberToCalc2;
+            break;
+        case "/":
+            result = numberToCalc1 / numberToCalc2;
+            break;
+    }
 
     equalButtonPressed = true;
     display();
@@ -156,7 +172,7 @@ function resetCalculator() {
     num1 = "";
     num2 = "";
     operator = "";
-    result = "";
+    result = 0;
     equalButtonPressed = false;
     display();
 }
