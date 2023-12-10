@@ -29,11 +29,6 @@
     box-sizing: border-box;
 }
 
-button {
-    border: 0;
-    padding: 0;
-}
-
 body {
     font-family: var(--ff-primary);
     background-color: var(--clr-theme1-main-bg);
@@ -107,7 +102,15 @@ header p {
     gap: .8rem;
 }
 
+button {
+    border: 0;
+    padding: 0;
+}
 
+button:active {
+    box-shadow: 0;
+    transform: translateY(3px);
+}
 
 .btn-square {
     width: 25%;
@@ -119,6 +122,8 @@ header p {
     color: var(--clr-text-dark-grayish-blue);
     box-shadow: 0 3px 0 rgb(192, 192, 192);
 }
+
+
 
 .btn-del {
     background-color: var(--clr-key-bg);
@@ -132,6 +137,8 @@ header p {
     line-height: 3.5rem;
     border-radius: 8px;
 }
+
+
 
 .btn-reset {
     font-size: 1.2rem;
