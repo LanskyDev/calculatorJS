@@ -131,21 +131,24 @@ function calculate() {
 
     numberToCalc1 = Number(num1);
     numberToCalc2 = Number(num2);
+    let calculation = 0;
 
     switch (operator) {
         case "+":
-            result = numberToCalc1 + numberToCalc2;
+            calculation = numberToCalc1 + numberToCalc2;
             break;
         case "-":
-            result = numberToCalc1 - numberToCalc2;
+            calculation = numberToCalc1 - numberToCalc2;
             break;
         case "*":
-            result = numberToCalc1 * numberToCalc2;
+            calculation = numberToCalc1 * numberToCalc2;
             break;
         case "/":
-            result = numberToCalc1 / numberToCalc2;
+            calculation = numberToCalc1 / numberToCalc2;
             break;
     }
+
+    result = formatNumber(calculation);
 
     equalButtonPressed = true;
     display();
@@ -153,6 +156,16 @@ function calculate() {
     num1 = result.toString();
     num2 = "";
     operator = "";
+}
+
+function formatNumber(number) {
+    if(Number.isInteger(number)){
+        return number;
+    } else {
+        const roundedNumber = parseFloat(number.toFixed(8));
+
+        return roundedNumber;
+    }
 }
 
 
