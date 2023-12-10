@@ -30,8 +30,6 @@ for (const opBtn of operatorButtons) {
 
     const selectedOperator = opBtn.dataset.value;
 
-
-
     $(opBtn).on("click", () => {
 
         // Only allow operator selection if num1 is truthy;
@@ -104,6 +102,8 @@ $(resetButton).on("click", () => {
 
 function handleNumberButtonClick(number) {
 
+    
+
     if (equalButtonPressed) {
         resetCalculator();
     }
@@ -129,7 +129,7 @@ function handleOperatorButtonClick(selectedOperator) {
         equalButtonPressed = false;
         operator = selectedOperator;
     }
-    
+
     display();
 }
 

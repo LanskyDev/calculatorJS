@@ -85,7 +85,15 @@ header p {
 .display-text {
     font-size: 2rem;
     text-align: center;
+    word-wrap: break-word;
+    max-width: 21ch;
 }
+
+@media (min-width: 600px) {
+    .display-text {
+      max-width: 27ch;
+    }
+  }
 
 .keypad-container {
     padding: 1.6rem;
@@ -122,7 +130,6 @@ button:active {
     color: var(--clr-text-dark-grayish-blue);
     box-shadow: 0 3px 0 rgb(192, 192, 192);
 }
-
 
 
 .btn-del {
